@@ -80,8 +80,6 @@ print("qui a la meilleure carte ?")
 
 ## maintenant on compare des cartes
 # atout ? 
-
-
 if card1.couleur == card2.couleur:
 	if card1.valeur != DIX and card2.valeur != DIX :
 		if card1.valeur > card2.valeur :
