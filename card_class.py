@@ -40,7 +40,8 @@ class Card:
 			self.points = 4
 		if self.valeur ==  Valeur.AS :
 			self.points = 11
-		
+	def strength(self):
+		return self.valeur.value
         
     
 
