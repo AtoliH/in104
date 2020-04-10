@@ -12,7 +12,7 @@ TODO:
 from enum import Enum
 
 
-Color = Enum("Color", "coeur carreau pique trefle")
+Color = Enum("Color", "COEUR CARREAU PIQUE TREFLE")
 	
 Valeur = Enum("Valeur", "SEPT HUIT NEUF VALET DAME ROI DIX AS")
 
