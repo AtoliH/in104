@@ -42,24 +42,8 @@ class Card:
 			self.points = 11
 	def strength(self):
 		return self.valeur.value
-        
-    
-
-card1 = Card(ROI, PIQUE)
-card1.points_carte()
-# ~ card1 = Card()
-# ~ card1.couleur = Color.COEUR
-# ~ card1.valeur = 10
-
-# card1.couleur = "VERTE"
-
-
-card2 = Card(10, PIQUE)
-card2.points_carte()
-# ~ card2.valeur = 9
-# card2.couleur = Color.COEUR
-
-#
+card1 = Card(Valeur.ROI, Color.PIQUE)
+card2 = Card(Valeur.DIX, Color.PIQUE)
 print("Le joueur 1 joue la carte", card1) 
 print("Le joueur 2 joue la carte", card2)
 print("qui a la meilleure carte ?")
