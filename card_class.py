@@ -12,11 +12,7 @@ TODO:
 from enum import Enum
 
 
-class Color(Enum):
-	COEUR = 0
-	CARREAU = 1
-	PIQUE = 2
-	TREFLE = 3
+Color = Enum("Color", "coeur carreau pique trefle")
 	
 class Valeur(Enum):
 	SEPT = 7
