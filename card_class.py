@@ -59,12 +59,5 @@ elif p1 > p2:
     print("C'est J1 qui gagne avec", card1)
 else:
     print("C'est J2 qui gagne avec",card2)
-			
-		
-else:
-	print("FIXME")
-        
 
 print("Et ça vaut ", card1.points + card2.points)
-
- 
