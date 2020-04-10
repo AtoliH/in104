@@ -11,8 +11,6 @@ TODO:
 """
 from enum import Enum
 
-COEUR, CARREAU, PIQUE, TREFLE = (0, 1, 2, 3)
-SEPT, HUIT, NEUF, DIX, VALET, DAME, ROI, AS = (7, 8, 9, 10, 11, 12, 13, 14)
 
 class Color(Enum):
 	COEUR = 0
