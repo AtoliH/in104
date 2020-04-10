@@ -14,15 +14,7 @@ from enum import Enum
 
 Color = Enum("Color", "coeur carreau pique trefle")
 	
-class Valeur(Enum):
-	SEPT = 7
-	HUIT = 8
-	NEUF = 9
-	DIX = 10
-	VALET = 11
-	DAME = 12
-	ROI = 13
-	AS = 14
+Valeur = Enum("Valeur", "SEPT HUIT NEUF VALET DAME ROI DIX AS")
 
 class Card:
 	def __init__(self, valeur = None, couleur = None):
