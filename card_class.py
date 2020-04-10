@@ -66,22 +66,15 @@ print("qui a la meilleure carte ?")
 
 ## maintenant on compare des cartes
 # atout ? 
-	if card1.valeur != DIX and card2.valeur != DIX :
-		if card1.valeur > card2.valeur :
-			print("C'est J1 qui gagne avec", card1)
-		else:
-			print("C'est J2 qui gagne avec", card2)
-	else :
-		if card1.valeur == DIX :
-			if card2.valeur == AS :
-				print("C'est J2 qui gagne avec", card2)
-			else : 
-				print("C'est J1 qui gagne avec", card1)
-		else : 
-			if card1.valeur == AS :
-				print("C'est J1 qui gagne avec", card1)
-			else : 
-				print("C'est J2 qui gagne avec", card2)
+p1 = card1.points
+p2 = card2.points
+
+if p1 == p2:
+    print("Égalité") # Ce cas n'est pas censé se produire dans le cadre de la belotte
+elif p1 > p2:
+    print("C'est J1 qui gagne avec", card1)
+else:
+    print("C'est J2 qui gagne avec",card2)
 			
 		
 else:
