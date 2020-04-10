@@ -42,22 +42,24 @@ class Card:
 			self.points = 11
 	def strength(self):
 		return self.valeur.value
-card1 = Card(Valeur.ROI, Color.PIQUE)
-card2 = Card(Valeur.DIX, Color.PIQUE)
-print("Le joueur 1 joue la carte", card1)
-print("Le joueur 2 joue la carte", card2)
-print("qui a la meilleure carte ?")
 
-## maintenant on compare des cartes
-# atout ?
-p1 = card1.points
-p2 = card2.points
+def jouer():
+    card1 = Card(Valeur.ROI, Color.PIQUE)
+    card2 = Card(Valeur.DIX, Color.PIQUE)
+    print("Le joueur 1 joue la carte", card1)
+    print("Le joueur 2 joue la carte", card2)
+    print("qui a la meilleure carte ?")
 
-if p1 == p2:
-    print("Égalité") # Ce cas n'est pas censé se produire dans le cadre de la belotte
-elif p1 > p2:
-    print("C'est J1 qui gagne avec", card1)
-else:
-    print("C'est J2 qui gagne avec",card2)
+    ## maintenant on compare des cartes
+    # atout ?
+    p1 = card1.points
+    p2 = card2.points
 
-print("Et ça vaut ", card1.points + card2.points)
+    if p1 == p2:
+        print("Égalité") # Ce cas n'est pas censé se produire dans le cadre de la belotte
+    elif p1 > p2:
+        print("C'est J1 qui gagne avec", card1)
+    else:
+        print("C'est J2 qui gagne avec",card2)
+
+    print("Et ça vaut ", card1.points + card2.points)
