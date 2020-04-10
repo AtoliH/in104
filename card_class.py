@@ -31,15 +31,15 @@ class Card:
 	def points_carte (self):
 		if (self.valeur == Valeur.SEPT) or (self.valeur == Valeur.HUIT) or (self.valeur == Valeur.NEUF):
 			self.points = 0
-		if self.valeur == DIX :
+		if self.valeur == Valeur.DIX :
 			self.points = 10
-		if self.valeur == VALET:
+		if self.valeur == Valeur.VALET:
 			self.points = 2
-		if self.valeur == DAME :
+		if self.valeur == Valeur.DAME :
 			self.points = 3
-		if self.valeur == ROI :
+		if self.valeur == Valeur.ROI :
 			self.points = 4
-		if self.valeur ==  AS :
+		if self.valeur ==  Valeur.AS :
 			self.points = 11
 		
         
