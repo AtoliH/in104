@@ -24,7 +24,7 @@ class Card:
 
 
 	def __str__(self):
-		p = str(Color(self.couleur).name)  #FIXME
+		p = str(Color(self.couleur).name)
 		q = str(Valeur(self.valeur).name)
 		return (q + " de " + p)
         
