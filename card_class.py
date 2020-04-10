@@ -29,7 +29,7 @@ class Card:
 		return (q + " de " + p)
         
 	def points_carte (self):
-		if (self.valeur == 7) or (self.valeur == 8) or (self.valeur == 9):
+		if (self.valeur == Valeur.SEPT) or (self.valeur == Valeur.HUIT) or (self.valeur == Valeur.NEUF):
 			self.points = 0
 		if self.valeur == DIX :
 			self.points = 10
