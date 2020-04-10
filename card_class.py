@@ -20,7 +20,6 @@ class Card:
 	def __init__(self, valeur = None, couleur = None):
 		self.couleur = couleur
 		self.valeur = valeur
-		self.points = 0
 
 
 	def __str__(self):
